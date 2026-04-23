@@ -639,7 +639,7 @@ function showPage(n){
   document.getElementById('page-'+n).classList.add('active');
   document.getElementById('nav-'+n).classList.add('active');
   if(n==='settings')loadSettingsPage();
-  if(n==='lpa')renderRoutier();
+  if(n==='lpa'){rLPA();renderRoutier();}
 }
 function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3500);}
 
